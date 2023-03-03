@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+header {
+  font-size: 30px;
+  font-weight: 300;
+  background-image: linear-gradient(
+    90deg,
+    hsl(0deg 0% 30%) 0%,
+    hsl(344deg 0% 41%) 10%,
+    hsl(344deg 0% 53%) 21%,
+    hsl(344deg 0% 65%) 32%,
+    hsl(344deg 0% 77%) 43%,
+    hsl(0deg 0% 90%) 53%,
+    hsl(344deg 0% 82%) 63%,
+    hsl(344deg 0% 74%) 73%,
+    hsl(344deg 0% 66%) 82%,
+    hsl(344deg 0% 59%) 91%,
+    hsl(0deg 0% 51%) 100%
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.user-list ul {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.user-list ul li {
+  list-style: none;
+}
+.charactersList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+.single-user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-width: 400px;
+  background: rgb(68, 40, 29);
+  background: linear-gradient(
+    90deg,
+    hsl(0deg 0% 30%) 0%,
+    hsl(344deg 0% 41%) 10%,
+    hsl(344deg 0% 53%) 21%,
+    hsl(344deg 0% 65%) 32%,
+    hsl(344deg 0% 77%) 43%,
+    hsl(0deg 0% 90%) 53%,
+    hsl(344deg 0% 82%) 63%,
+    hsl(344deg 0% 74%) 73%,
+    hsl(344deg 0% 66%) 82%,
+    hsl(344deg 0% 59%) 91%,
+    hsl(0deg 0% 51%) 100%
+  );
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.single-user img {
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 110px;
+}
+
+.user-info .user-mail {
+  margin: 10px 0;
+}
